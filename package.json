@@ -35,7 +35,7 @@
     "typescript": "~4.1.5"
   },
   "lint-staged": {
-    "*.[js,ts,vue]": [
+    "*.@(ts|tsx|vue|js)": [
       "eslint --cache --fix",
       "prettier --write"
     ]
