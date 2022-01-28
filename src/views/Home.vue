@@ -18,13 +18,22 @@
         </aside>
       </router-link>
     </article>
+    <search-box />
+    <movies-list />
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import SearchBox from "./../components/SearchBox.vue";
+import MoviesList from "./../components/MoviesList.vue";
 
-export default defineComponent({});
+export default defineComponent({
+  components: {
+    SearchBox,
+    MoviesList,
+  },
+});
 </script>
 
 <style lang="scss">
